@@ -9,9 +9,7 @@ import cn.joylau.mybatis.mapper.common.condition.*;
 
 /**
  * 通用Mapper接口,Condition查询
- *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface ConditionMapper<T> extends
         SelectByConditionMapper<T>,

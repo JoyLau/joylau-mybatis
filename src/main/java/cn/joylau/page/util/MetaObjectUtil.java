@@ -10,7 +10,6 @@ import org.apache.ibatis.reflection.MetaObject;
 import java.lang.reflect.Method;
 
 /**
- * @author liuzh
  */
 public class MetaObjectUtil {
     public static Method method;

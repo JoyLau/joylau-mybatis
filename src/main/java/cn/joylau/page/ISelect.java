@@ -7,7 +7,6 @@ package cn.joylau.page;
 /**
  * 分页查询接口
  *
- * @author liuzh_3nofxnp
  * @since 2015-12-18 18:51
  */
 public interface ISelect {

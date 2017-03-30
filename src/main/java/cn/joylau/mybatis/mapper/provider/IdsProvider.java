@@ -19,7 +19,6 @@ import java.util.Set;
  * <p/>
  * ids 如 "1,2,3"
  *
- * @author liuzh
  */
 public class IdsProvider extends MapperTemplate {
 

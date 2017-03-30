@@ -24,7 +24,6 @@ import java.util.Set;
 /**
  * 通用Mapper生成器插件
  *
- * @author liuzh
  */
 public class MapperPlugin extends PluginAdapter {
     private Set<String> mappers = new HashSet<String>();

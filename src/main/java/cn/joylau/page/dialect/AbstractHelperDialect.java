@@ -18,8 +18,6 @@ import java.util.Properties;
 /**
  * 针对 PageHelper 的实现
  *
- * @author liuzh
- * @since 2016-12-04 14:32
  */
 public abstract class AbstractHelperDialect extends AbstractDialect {
 

@@ -9,7 +9,6 @@ import cn.joylau.page.dialect.AbstractHelperDialect;
 import org.apache.ibatis.cache.CacheKey;
 
 /**
- * @author liuzh
  */
 public class Db2Dialect extends AbstractHelperDialect {
 

@@ -9,9 +9,7 @@ import cn.joylau.mybatis.mapper.common.base.delete.DeleteMapper;
 
 /**
  * 通用Mapper接口,基础删除
- *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface BaseDeleteMapper<T> extends
         DeleteMapper<T>,

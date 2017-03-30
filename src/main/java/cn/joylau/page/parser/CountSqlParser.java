@@ -18,7 +18,6 @@ import java.util.List;
 /**
  * sql解析类，提供更智能的count查询sql
  *
- * @author liuzh
  */
 public class CountSqlParser {
     public static final String KEEP_ORDERBY = "/*keep orderby*/";

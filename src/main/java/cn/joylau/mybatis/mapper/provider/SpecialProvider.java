@@ -16,7 +16,6 @@ import java.util.Set;
 /**
  * SpecialProvider实现类，特殊方法实现类
  *
- * @author liuzh
  */
 public class SpecialProvider extends MapperTemplate {
 

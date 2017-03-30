@@ -8,7 +8,6 @@ import cn.joylau.page.Page;
 import org.apache.ibatis.cache.CacheKey;
 
 /**
- * @author liuzh
  */
 public class SqlServer2012Dialect extends SqlServerDialect {
 

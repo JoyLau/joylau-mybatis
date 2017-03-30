@@ -15,13 +15,11 @@ import static org.mybatis.generator.internal.util.StringUtility.stringHasValue;
  * <p>
  * 用法：
  * <pre>
- * &lt;context id="Mysql" targetRuntime="tk.mybatis.mapper.generator.TkMyBatis3Impl" defaultModelType="flat"&gt;
+ * &lt;context id="Mysql" targetRuntime="cn.joylau.mybatis.mapper.generator.TkMyBatis3Impl" defaultModelType="flat"&gt;
  * &lt;/context&gt;
  * </pre>
  * </p>
  *
- * @author liuzh
- * @since 2016-09-04 09:57
  */
 public class TkMyBatis3Impl extends IntrospectedTableMyBatis3Impl {
 

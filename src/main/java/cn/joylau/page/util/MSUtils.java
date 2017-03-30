@@ -14,7 +14,6 @@ import java.util.List;
 /**
  * 创建新的MappedStatement,主要是Count返回值int
  *
- * @author liuzh
  */
 public class MSUtils {
     public static final String COUNT = "_COUNT";

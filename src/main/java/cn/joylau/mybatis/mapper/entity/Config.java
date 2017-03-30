@@ -14,8 +14,6 @@ import java.util.Properties;
 
 /**
  * 通用Mapper属性配置
- *
- * @author liuzh
  */
 public class Config {
     private String  UUID;

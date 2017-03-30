@@ -9,9 +9,7 @@ import cn.joylau.mybatis.mapper.common.base.insert.InsertSelectiveMapper;
 
 /**
  * 通用Mapper接口,基础查询
- *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface BaseInsertMapper<T> extends
         InsertMapper<T>,

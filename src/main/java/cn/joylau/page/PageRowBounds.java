@@ -7,7 +7,6 @@ package cn.joylau.page;
 import org.apache.ibatis.session.RowBounds;
 
 /**
- * @author liuzenghui
  */
 public class PageRowBounds extends RowBounds {
     private Long total;

@@ -11,7 +11,6 @@ import org.apache.ibatis.type.TypeHandler;
 /**
  * 数据库表对应的列
  *
- * @author liuzh
  */
 public class EntityColumn {
     private EntityTable table;

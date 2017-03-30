@@ -7,6 +7,7 @@ package cn.joylau.mybatis.spring.mapper;
 import cn.joylau.mybatis.mapper.common.Marker;
 import cn.joylau.mybatis.mapper.mapperhelper.MapperHelper;
 import cn.joylau.mybatis.mapper.util.StringUtil;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
@@ -17,6 +18,7 @@ import java.util.Properties;
 public class MapperScannerConfigurer extends org.mybatis.spring.mapper.MapperScannerConfigurer {
     private MapperHelper mapperHelper = new MapperHelper();
 
+    private static final Logger log = Logger.getLogger("AuthenticatedTag");
     public void setMarkerInterface(Class<?> superClass) {
         super.setMarkerInterface(superClass);
         if (Marker.class.isAssignableFrom(superClass)) {

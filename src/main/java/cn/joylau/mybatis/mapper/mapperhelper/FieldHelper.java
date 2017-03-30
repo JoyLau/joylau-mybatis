@@ -17,9 +17,6 @@ import java.util.*;
 
 /**
  * 类字段工具类
- *
- * @author liuzh
- * @since 2015-12-06 18:38
  */
 public class FieldHelper {
 

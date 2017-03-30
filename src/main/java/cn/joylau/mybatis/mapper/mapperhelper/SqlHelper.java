@@ -13,8 +13,6 @@ import java.util.Set;
 /**
  * 拼常用SQL的工具类
  *
- * @author liuzh
- * @since 2015-11-03 22:40
  */
 public class SqlHelper {
 
@@ -27,10 +25,10 @@ public class SqlHelper {
      */
     public static String getDynamicTableName(Class<?> entityClass, String tableName) {
         if (IDynamicTableName.class.isAssignableFrom(entityClass)) {
-            return "<if test=\"@tk.mybatis.mapper.util.OGNL@isDynamicParameter(_parameter) and dynamicTableName != null and dynamicTableName != ''\">\n" +
+            return "<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@isDynamicParameter(_parameter) and dynamicTableName != null and dynamicTableName != ''\">\n" +
                     "${dynamicTableName}\n" +
                     "</if>\n" +
-                    "<if test=\"@tk.mybatis.mapper.util.OGNL@isNotDynamicParameter(_parameter) or dynamicTableName == null or dynamicTableName == ''\">\n" +
+                    "<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@isNotDynamicParameter(_parameter) or dynamicTableName == null or dynamicTableName == ''\">\n" +
                     tableName + "\n" +
                     "</if>";
         } else {
@@ -49,10 +47,10 @@ public class SqlHelper {
     public static String getDynamicTableName(Class<?> entityClass, String tableName, String parameterName) {
         if (IDynamicTableName.class.isAssignableFrom(entityClass)) {
             if (StringUtil.isNotEmpty(parameterName)) {
-                return "<if test=\"@tk.mybatis.mapper.util.OGNL@isDynamicParameter(" + parameterName + ") and " + parameterName + ".dynamicTableName != null and " + parameterName + ".dynamicTableName != ''\">\n" +
+                return "<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@isDynamicParameter(" + parameterName + ") and " + parameterName + ".dynamicTableName != null and " + parameterName + ".dynamicTableName != ''\">\n" +
                         "${" + parameterName + ".dynamicTableName}\n" +
                         "</if>\n" +
-                        "<if test=\"@tk.mybatis.mapper.util.OGNL@isNotDynamicParameter(" + parameterName + ") or " + parameterName + ".dynamicTableName == null or " + parameterName + ".dynamicTableName == ''\">\n" +
+                        "<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@isNotDynamicParameter(" + parameterName + ") or " + parameterName + ".dynamicTableName == null or " + parameterName + ".dynamicTableName == ''\">\n" +
                         tableName + "\n" +
                         "</if>";
             } else {
@@ -493,13 +491,13 @@ public class SqlHelper {
      */
     public static String exampleSelectColumns(Class<?> entityClass) {
         StringBuilder sql = new StringBuilder();
-        sql.append("<if test=\"@tk.mybatis.mapper.util.OGNL@hasSelectColumns(_parameter)\">");
+        sql.append("<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@hasSelectColumns(_parameter)\">");
         sql.append("<foreach collection=\"_parameter.selectColumns\" item=\"selectColumn\" separator=\",\">");
         sql.append("${selectColumn}");
         sql.append("</foreach>");
         sql.append("</if>");
         //不支持指定列的时候查询全部列
-        sql.append("<if test=\"@tk.mybatis.mapper.util.OGNL@hasNoSelectColumns(_parameter)\">");
+        sql.append("<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@hasNoSelectColumns(_parameter)\">");
         sql.append(getAllColumns(entityClass));
         sql.append("</if>");
         return sql.toString();
@@ -513,7 +511,7 @@ public class SqlHelper {
     public static String exampleCountColumn(Class<?> entityClass) {
         StringBuilder sql = new StringBuilder();
         sql.append("<choose>");
-        sql.append("<when test=\"@tk.mybatis.mapper.util.OGNL@hasCountColumn(_parameter)\">");
+        sql.append("<when test=\"@cn.joylau.mybatis.mapper.util.OGNL@hasCountColumn(_parameter)\">");
         sql.append("COUNT(${countColumn})");
         sql.append("</when>");
         sql.append("<otherwise>");
@@ -521,7 +519,7 @@ public class SqlHelper {
         sql.append("</otherwise>");
         sql.append("</choose>");
         //不支持指定列的时候查询全部列
-        sql.append("<if test=\"@tk.mybatis.mapper.util.OGNL@hasNoSelectColumns(_parameter)\">");
+        sql.append("<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@hasNoSelectColumns(_parameter)\">");
         sql.append(getAllColumns(entityClass));
         sql.append("</if>");
         return sql.toString();
@@ -553,7 +551,7 @@ public class SqlHelper {
      */
     public static String exampleForUpdate() {
         StringBuilder sql = new StringBuilder();
-        sql.append("<if test=\"@tk.mybatis.mapper.util.OGNL@hasForUpdate(_parameter)\">");
+        sql.append("<if test=\"@cn.joylau.mybatis.mapper.util.OGNL@hasForUpdate(_parameter)\">");
         sql.append("FOR UPDATE");
         sql.append("</if>");
         return sql.toString();
@@ -566,7 +564,7 @@ public class SqlHelper {
      */
     public static String exampleCheck(Class<?> entityClass) {
         StringBuilder sql = new StringBuilder();
-        sql.append("<bind name=\"checkExampleEntityClass\" value=\"@tk.mybatis.mapper.util.OGNL@checkExampleEntityClass(_parameter, '");
+        sql.append("<bind name=\"checkExampleEntityClass\" value=\"@cn.joylau.mybatis.mapper.util.OGNL@checkExampleEntityClass(_parameter, '");
         sql.append(entityClass.getCanonicalName());
         sql.append("')\"/>");
         return sql.toString();

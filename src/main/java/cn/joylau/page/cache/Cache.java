@@ -7,7 +7,6 @@ package cn.joylau.page.cache;
 /**
  * Simple cache interface
  *
- * @author liuzh
  */
 public interface Cache<K, V> {
 

@@ -10,7 +10,6 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * sqlserver2012 基于 RowBounds 的分页
  *
- * @author liuzh
  */
 public class SqlServer2012RowBoundsDialect extends SqlServerRowBoundsDialect {
 

@@ -15,7 +15,6 @@ import java.util.Properties;
 /**
  * 数据库方言，针对不同数据库进行实现
  *
- * @author liuzh
  */
 public interface Dialect {
     /**

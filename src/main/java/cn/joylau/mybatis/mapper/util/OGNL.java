@@ -11,7 +11,6 @@ import cn.joylau.mybatis.mapper.entity.IDynamicTableName;
 /**
  * OGNL静态方法
  *
- * @author liuzh
  */
 public abstract class OGNL {
 

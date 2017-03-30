@@ -29,8 +29,6 @@ import java.util.*;
 
 /**
  * 通用Mapper模板类，扩展通用Mapper时需要继承该类
- *
- * @author liuzh
  */
 public abstract class MapperTemplate {
     private static final XMLLanguageDriver languageDriver = new XMLLanguageDriver();
@@ -330,8 +328,8 @@ public abstract class MapperTemplate {
     protected SqlNode getDynamicTableNameNode(Class<?> entityClass) {
         if (IDynamicTableName.class.isAssignableFrom(entityClass)) {
             List<SqlNode> ifSqlNodes = new ArrayList<SqlNode>();
-            ifSqlNodes.add(new IfSqlNode(new TextSqlNode("${dynamicTableName}"), "@tk.mybatis.mapper.util.OGNL@isDynamicParameter(_parameter) and dynamicTableName != null and dynamicTableName != ''"));
-            ifSqlNodes.add(new IfSqlNode(new StaticTextSqlNode(tableName(entityClass)), "@tk.mybatis.mapper.util.OGNL@isNotDynamicParameter(_parameter) or dynamicTableName == null or dynamicTableName == ''"));
+            ifSqlNodes.add(new IfSqlNode(new TextSqlNode("${dynamicTableName}"), "@cn.joylau.mybatis.mapper.util.OGNL@isDynamicParameter(_parameter) and dynamicTableName != null and dynamicTableName != ''"));
+            ifSqlNodes.add(new IfSqlNode(new StaticTextSqlNode(tableName(entityClass)), "@cn.joylau.mybatis.mapper.util.OGNL@isNotDynamicParameter(_parameter) or dynamicTableName == null or dynamicTableName == ''"));
             return new MixedSqlNode(ifSqlNodes);
         } else {
             return new StaticTextSqlNode(tableName(entityClass));
@@ -350,8 +348,8 @@ public abstract class MapperTemplate {
     protected SqlNode getDynamicTableNameNode(Class<?> entityClass, String parameterName) {
         if (IDynamicTableName.class.isAssignableFrom(entityClass)) {
             List<SqlNode> ifSqlNodes = new ArrayList<SqlNode>();
-            ifSqlNodes.add(new IfSqlNode(new TextSqlNode("${" + parameterName + ".dynamicTableName}"), "@tk.mybatis.mapper.util.OGNL@isDynamicParameter(" + parameterName + ") and " + parameterName + ".dynamicTableName != null and  " + parameterName + ".dynamicTableName != ''"));
-            ifSqlNodes.add(new IfSqlNode(new StaticTextSqlNode(tableName(entityClass)), "@tk.mybatis.mapper.util.OGNL@isNotDynamicParameter(" + parameterName + ") or " + parameterName + ".dynamicTableName == null or " + parameterName + ".dynamicTableName == ''"));
+            ifSqlNodes.add(new IfSqlNode(new TextSqlNode("${" + parameterName + ".dynamicTableName}"), "@cn.joylau.mybatis.mapper.util.OGNL@isDynamicParameter(" + parameterName + ") and " + parameterName + ".dynamicTableName != null and  " + parameterName + ".dynamicTableName != ''"));
+            ifSqlNodes.add(new IfSqlNode(new StaticTextSqlNode(tableName(entityClass)), "@cn.joylau.mybatis.mapper.util.OGNL@isNotDynamicParameter(" + parameterName + ") or " + parameterName + ".dynamicTableName == null or " + parameterName + ".dynamicTableName == ''"));
             return new MixedSqlNode(ifSqlNodes);
         } else {
             return new StaticTextSqlNode(tableName(entityClass));

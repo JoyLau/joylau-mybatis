@@ -23,10 +23,6 @@ import java.util.*;
 
 /**
  * 实体类工具类 - 处理实体和数据库表以及字段关键的一个类
- * <p/>
- * <p>项目地址 : <a href="https://github.com/abel533/Mapper" target="_blank">https://github.com/abel533/Mapper</a></p>
- *
- * @author liuzh
  */
 public class EntityHelper {
 

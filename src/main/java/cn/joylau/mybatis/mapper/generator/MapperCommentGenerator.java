@@ -14,6 +14,7 @@ import org.mybatis.generator.config.MergeConstants;
 import org.mybatis.generator.internal.util.StringUtility;
 
 import java.text.MessageFormat;
+import java.util.Calendar;
 import java.util.Properties;
 
 public class MapperCommentGenerator implements CommentGenerator {
@@ -38,7 +39,8 @@ public class MapperCommentGenerator implements CommentGenerator {
     public void addComment(XmlElement xmlElement) {
         xmlElement.addElement(new TextElement("<!--"));
         StringBuilder sb = new StringBuilder();
-        sb.append("  WARNING - ");
+        sb.append("  Copyright (c) ").append(Calendar.getInstance().get(Calendar.YEAR)).append(" by JoyLau. All " +
+                "rights reserved - ");
         sb.append(MergeConstants.NEW_ELEMENT_TAG);
         xmlElement.addElement(new TextElement(sb.toString()));
         xmlElement.addElement(new TextElement("-->"));

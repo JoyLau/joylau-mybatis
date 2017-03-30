@@ -11,9 +11,7 @@ import java.util.List;
 
 /**
  * 通用Mapper接口,根据ids查询
- *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface SelectByIdsMapper<T> {
 

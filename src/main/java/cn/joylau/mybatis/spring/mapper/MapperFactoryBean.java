@@ -10,7 +10,6 @@ import cn.joylau.mybatis.mapper.mapperhelper.MapperHelper;
  * 增加mapperHelper
  *
  * @param <T>
- * @author liuzh
  */
 public class MapperFactoryBean<T> extends org.mybatis.spring.mapper.MapperFactoryBean<T> {
 

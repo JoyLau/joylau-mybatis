@@ -17,7 +17,6 @@ import java.util.*;
 /**
  * 数据库表
  *
- * @author liuzh
  */
 public class EntityTable {
     private String name;

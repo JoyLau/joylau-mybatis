@@ -10,9 +10,7 @@ import org.apache.ibatis.annotations.UpdateProvider;
 
 /**
  * 通用Mapper接口,更新
- *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface UpdateByPrimaryKeyMapper<T> {
 

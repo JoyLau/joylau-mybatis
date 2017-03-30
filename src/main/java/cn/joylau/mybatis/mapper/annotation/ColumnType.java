@@ -16,8 +16,6 @@ import java.lang.annotation.Target;
 /**
  * 针对列的复杂属性配置
  *
- * @author liuzh
- * @since 2015-10-29 22:00
  */
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

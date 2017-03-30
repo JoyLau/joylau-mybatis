@@ -7,8 +7,6 @@ package cn.joylau.mybatis.mapper.entity;
 /**
  * 实现动态表名时，实体类需要实现该接口
  *
- * @author liuzh
- * @since 2015-10-28 22:20
  */
 public interface IDynamicTableName {
 

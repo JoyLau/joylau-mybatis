@@ -11,7 +11,6 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * informix 基于 RowBounds 的分页
  *
- * @author liuzh
  */
 public class InformixRowBoundsDialect extends AbstractRowBoundsDialect {
 

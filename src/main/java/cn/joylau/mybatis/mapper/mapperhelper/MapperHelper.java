@@ -22,10 +22,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 处理主要逻辑，最关键的一个类
- * <p/>
- * <p>项目地址 : <a href="https://github.com/abel533/Mapper" target="_blank">https://github.com/abel533/Mapper</a></p>
- *
- * @author liuzh
  */
 public class MapperHelper {
     /**
@@ -256,7 +252,7 @@ public class MapperHelper {
      */
     public void ifEmptyRegisterDefaultInterface() {
         if (registerClass.size() == 0) {
-            registerMapper("tk.mybatis.mapper.common.Mapper");
+            registerMapper("cn.joylau.mybatis.mapper.common.Mapper");
         }
     }
 

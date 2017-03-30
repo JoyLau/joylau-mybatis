@@ -12,7 +12,6 @@ import java.lang.reflect.Method;
 /**
  * 封装字段和方法，统一调用某些方法
  *
- * @author liuzh
  */
 public class EntityField {
     private String name;

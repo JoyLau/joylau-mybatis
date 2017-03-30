@@ -14,7 +14,6 @@ import java.util.Properties;
 /**
  * Page 参数信息
  *
- * @author liuzh
  */
 public class PageParams {
     //RowBounds参数offset作为PageNum使用 - 默认不使用

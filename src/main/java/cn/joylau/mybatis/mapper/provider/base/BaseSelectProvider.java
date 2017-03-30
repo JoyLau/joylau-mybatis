@@ -12,7 +12,6 @@ import org.apache.ibatis.mapping.MappedStatement;
 /**
  * BaseSelectProvider实现类，基础方法实现类
  *
- * @author liuzh
  */
 public class BaseSelectProvider extends MapperTemplate {
 

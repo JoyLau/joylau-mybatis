@@ -11,7 +11,6 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * mysql 基于 RowBounds 的分页
  *
- * @author liuzh
  */
 public class MySqlRowBoundsDialect extends AbstractRowBoundsDialect {
 

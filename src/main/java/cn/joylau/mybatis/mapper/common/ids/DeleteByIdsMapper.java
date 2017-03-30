@@ -9,9 +9,7 @@ import org.apache.ibatis.annotations.DeleteProvider;
 
 /**
  * 通用Mapper接口,根据ids删除
- *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface DeleteByIdsMapper<T> {
 

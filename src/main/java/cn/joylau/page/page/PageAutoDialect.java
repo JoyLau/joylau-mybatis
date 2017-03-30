@@ -22,7 +22,6 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 基础方言信息
  *
- * @author liuzh
  */
 public class PageAutoDialect {
 

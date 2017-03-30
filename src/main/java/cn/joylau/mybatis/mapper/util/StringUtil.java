@@ -9,9 +9,6 @@ import cn.joylau.mybatis.mapper.code.Style;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by liuzh_3nofxnp on 2015/8/26.
- */
 public class StringUtil {
 
     /**

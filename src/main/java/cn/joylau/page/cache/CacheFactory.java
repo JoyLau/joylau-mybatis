@@ -14,7 +14,6 @@ import java.util.Properties;
 /**
  * CacheFactory
  *
- * @author liuzh
  */
 public abstract class CacheFactory {
 

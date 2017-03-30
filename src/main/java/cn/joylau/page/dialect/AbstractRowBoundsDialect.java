@@ -16,7 +16,6 @@ import java.util.Properties;
 /**
  * 基于 RowBounds 的分页
  *
- * @author liuzh
  */
 public abstract class AbstractRowBoundsDialect extends AbstractDialect {
 

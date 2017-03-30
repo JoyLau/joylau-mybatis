@@ -11,7 +11,6 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * db2 基于 RowBounds 的分页
  *
- * @author liuzh
  */
 public class Db2RowBoundsDialect extends AbstractRowBoundsDialect {
 

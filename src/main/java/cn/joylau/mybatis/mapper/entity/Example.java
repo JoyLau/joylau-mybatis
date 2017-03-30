@@ -16,7 +16,6 @@ import java.util.*;
 /**
  * 通用的Example查询对象
  *
- * @author liuzh
  */
 public class Example implements IDynamicTableName {
     protected String orderByClause;

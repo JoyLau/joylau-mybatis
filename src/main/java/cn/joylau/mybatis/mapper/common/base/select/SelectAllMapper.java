@@ -9,9 +9,6 @@ import org.apache.ibatis.annotations.SelectProvider;
 
 import java.util.List;
 
-/**
- * @author liuzh
- */
 public interface SelectAllMapper<T> {
 
     /**

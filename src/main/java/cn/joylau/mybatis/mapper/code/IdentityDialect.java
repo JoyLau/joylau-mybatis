@@ -4,9 +4,6 @@
 
 package cn.joylau.mybatis.mapper.code;
 
-/**
- * @author liuzh
- */
 public enum IdentityDialect {
     DB2("VALUES IDENTITY_VAL_LOCAL()"),
     MYSQL("SELECT LAST_INSERT_ID()"),

@@ -8,9 +8,7 @@ import cn.joylau.mybatis.mapper.common.example.*;
 
 /**
  * 通用Mapper接口,Example查询
- *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface ExampleMapper<T> extends
         SelectByExampleMapper<T>,

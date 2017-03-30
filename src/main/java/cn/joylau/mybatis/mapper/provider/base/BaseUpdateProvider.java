@@ -12,7 +12,6 @@ import org.apache.ibatis.mapping.MappedStatement;
 /**
  * BaseUpdateProvider实现类，基础方法实现类
  *
- * @author liuzh
  */
 public class BaseUpdateProvider extends MapperTemplate {
 

@@ -29,7 +29,6 @@ import java.util.*;
  * </ol>
  * 该类设计为一个独立的工具类，依赖jsqlparser,可以独立使用
  *
- * @author liuzh
  */
 public class SqlServerParser {
     //开始行号

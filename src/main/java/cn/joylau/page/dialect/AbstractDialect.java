@@ -14,7 +14,6 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * 基于 CountSqlParser 的智能 Count 查询
  *
- * @author liuzh
  */
 public abstract class AbstractDialect implements Dialect {
     //处理SQL

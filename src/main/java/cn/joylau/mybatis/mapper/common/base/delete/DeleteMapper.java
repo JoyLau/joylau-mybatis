@@ -11,7 +11,6 @@ import org.apache.ibatis.annotations.DeleteProvider;
  * 通用Mapper接口,删除
  *
  * @param <T> 不能为空
- * @author liuzh
  */
 public interface DeleteMapper<T> {
 

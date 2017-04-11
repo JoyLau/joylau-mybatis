@@ -36,7 +36,7 @@ public class PageInterceptor implements Interceptor {
     //缓存count查询的ms
     protected Cache<CacheKey, MappedStatement> msCountMap = null;
     private Dialect dialect;
-    private String default_dialect_class = "cn.joylau.oage.PageHelper";
+    private String default_dialect_class = "cn.joylau.page.PageHelper";
     private Field additionalParametersField;
 
     @Override
